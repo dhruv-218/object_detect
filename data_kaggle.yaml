@@ -1,0 +1,7 @@
+train: /Users/Dhruv/mlcasee/train
+val: /Users/Dhruv/mlcasee/valid
+test: /Users/Dhruv/mlcasee/test
+
+nc: 3
+names: ['Car', 'Pedestrian', 'Truck']
+
