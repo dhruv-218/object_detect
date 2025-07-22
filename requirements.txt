@@ -1,0 +1,7 @@
+ultralytics
+numpy>=1.26.0,<2.0.0
+matplotlib
+opencv-python
+seaborn
+scikit-learn
+torch
