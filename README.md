@@ -6,8 +6,8 @@ This project demonstrates object detection using a YOLOv8 neural network, traine
 ### Example Output Images
 |Orignal Image| Predicted Bounding Boxes | 
 |---------------|-------------------------|
-| ![orignal](test.jpg) | ![Prediction1](predicted3.jpg) | 
-| ![Original](test_input.jpg) | ![Prediction2](predicted 2.jpg) | 
+| ![orignal](test.jpg) | ![Prediction1](predicted_3.jpg) | 
+| ![Original](test_input.jpg) | ![Prediction2](predicted_2.jpg) | 
 
 ## Model Architecture
 # YOLOv11n - Nano Variant (Accurate, Faithful Summary)
