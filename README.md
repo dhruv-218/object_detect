@@ -79,7 +79,7 @@ YOLOv11n is the **lightest and fastest model** in the YOLOv11 family, tailored f
 3. **Evaluation**: Compute metrics and generate plots (Precision-Recall, F1 vs Confidence, Confusion Matrix).
 
 ## Output & Evaluation
-- **Predicted Images**: Results are saved as `predicted.jpg` and `output_with_distances.jpg`.
+
 - **Evaluation Metrics**:
     - Precision
     - Recall
@@ -92,10 +92,7 @@ YOLOv11n is the **lightest and fastest model** in the YOLOv11 family, tailored f
                                                           
 ----
 
-### Example Output Images
-| Predicted Bounding Boxes | 
-|-------------------------|
-| ![Prediction](predicted.jpg) | 
+
 
 ### Example Evaluation Plots
 After running evaluation, plots are auto-saved in the `runs/detect/val/` directory:
