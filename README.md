@@ -80,7 +80,7 @@ mAP@0.5:0.95:  0.65
 
 ## References
 - [Ultralytics YOLO Docs](https://docs.ultralytics.com/)
-- [YOLOv8 Paper](https://arxiv.org/abs/2304.00560)
+- [YOLOv11 Github Repository](https://github.com/ultralytics/ultralytics)
 
 ---
 Feel free to explore, modify, and extend the code for your own datasets and tasks!
