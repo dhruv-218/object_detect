@@ -2,6 +2,12 @@
 
 This project demonstrates object detection using a YOLOv8 neural network, trained and evaluated on a custom dataset. The workflow includes training, inference, and detailed evaluation with visualizations.
 
+
+### Example Output Images
+|Orignal Image| Predicted Bounding Boxes | 
+|---------------|-------------------------|
+| !Original](predicted.jpg) | ![Prediction](predicted.jpg) | 
+
 ## Model Architecture
 # YOLOv11n - Nano Variant (Accurate, Faithful Summary)
 
@@ -62,26 +68,12 @@ YOLOv11n is the **lightest and fastest model** in the YOLOv11 family, tailored f
 | Activation functions     |  SiLU      | Matches YOLOv8/10 behavior unless otherwise overridden   |Confirmed via model definitions — SiLU remains the default activation for all YOLOv11 variants unless explicitly overridden.                                                                   |
 | Anchor-free detection    |  Not used  | YOLOv11n uses **anchor-based detection**                 |YOLOv11n **does not adopt anchor-free detection**. The `Detect` head is **standard anchor-based**, using predefined anchors and strides \[8, 16, 32].                                          |
 | Quantization/ONNX export | Supported | Exportable via Ultralytics tools to ONNX/CoreML/TensorRT |The model is exportable via `export.py` into ONNX/CoreML/TensorRT — confirmed via Ultralytics export framework.                                                                                |
----
 
-##  YOLOv11n vs YOLOv10n – Benchmarks
-
-| Metric         | YOLOv10n | YOLOv11n |
-|----------------|----------|----------|
-| mAP (val)      | 33.7     | **35.6** |
-| Inference FPS  | 179      | **201**  |
-| Parameters     | 4.2M     | **3.7M** |
-| GFLOPs         | 6.1      | **5.2**  |
-
--  ~**5.6% improvement in mAP**, with lower latency and fewer parameters  
--  Inference speed tested on **V100/T4**; real-world performance may vary
--  ![Benchmarks]((https://raw.githubusercontent.com/ultralytics/assets/refs/heads/main/yolo/performance-comparison.png))
-) 
 ---
 
 
 ## Workflow
-1. **Training**: Model is trained using `data_kaggle.yaml` for 100 epochs at 640x640 resolution.
+1. **Training**: Model is trained using `data_kaggle.yaml` which had 3 classes ['Car', 'Pedestrian', 'Truck'] for 100 epochs at 640x640 resolution.
 2. **Inference**: Run predictions on test images, visualize and save results.
 3. **Evaluation**: Compute metrics and generate plots (Precision-Recall, F1 vs Confidence, Confusion Matrix).
 
@@ -100,9 +92,9 @@ YOLOv11n is the **lightest and fastest model** in the YOLOv11 family, tailored f
 ----
 
 ### Example Output Images
-| Predicted Bounding Boxes | Distance Estimation |
-|-------------------------|--------------------|
-| ![Prediction](predicted.jpg) | ![Distance](output_with_distances.jpg) |
+| Predicted Bounding Boxes | 
+|-------------------------|
+| ![Prediction](predicted.jpg) | 
 
 ### Example Evaluation Plots
 After running evaluation, plots are auto-saved in the `runs/detect/val/` directory:
