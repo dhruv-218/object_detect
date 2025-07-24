@@ -337,7 +337,7 @@ It outlines **what has been verified** and **what requires code-level confirmati
 
 ---
 
-## 1. Verification Summary
+# 1. Verification Summary
 
 | Aspect                                  | Status              | Notes                                                                                   |
 |-----------------------------------------|---------------------|-----------------------------------------------------------------------------------------|
@@ -350,41 +350,41 @@ It outlines **what has been verified** and **what requires code-level confirmati
 
 ---
 
-## 2. Verified Elements (Known Correct)
+# 2. Verified Elements (Known Correct)
 
 ### Mathematical Framework
 - Arithmetic checks (e.g., exponential calculations) are correct.
 - Sigmoid and activation principles follow YOLO’s standard mathematical framework (pending some intermediate validation).
 
-### Logical Design
+# Logical Design
 - The architecture flow (**backbone → neck → detection head**) aligns with YOLOv11’s documented *"enhanced backbone and neck"* structure.
 
 ---
 
-## 3. Pending Verification (Code-Level Required)
+# 3. Pending Verification (Code-Level Required)
 
 The following items must be **confirmed by directly inspecting the Ultralytics YOLOv11 source code**:
 
-### Activation Functions
+# Activation Functions
 - Which activation function (e.g., **SiLU, ReLU, sigmoid**, or others) is applied to detection head outputs.
 - Whether **sigmoid/exponential transformations** are used for bounding box coordinate predictions.
 
-### Coordinate Decoding
+# Coordinate Decoding
 - Exact formulas for converting raw predictions into final bounding box coordinates.
 - Scaling factors relative to **grid size and anchor priors**.
 
-### Feature Map Scales
+# Feature Map Scales
 - Confirm multi-scale outputs:
   - Some sources: **P1–P5 (320×320 → 20×20)**.
   - Current documentation: **P3–P5 (80×80 → 20×20)**.
 
-### Grid and Anchor Scaling
+# Grid and Anchor Scaling
 - Verify how **grid cell indexing** is implemented.
 - Confirm **anchor box scaling** across feature levels.
 
 ---
 
-## 4. Reference Links
+# 4. Reference Links
 
 - [Ultralytics YOLOv8 Activation Function Discussion (#7296)](https://github.com/ultralytics/ultralytics/issues/7296)  
 - [Replacing SiLU with ReLU (#6014)](https://github.com/ultralytics/ultralytics/issues/6014)  
@@ -393,7 +393,7 @@ The following items must be **confirmed by directly inspecting the Ultralytics Y
 
 ---
 
-## 5. Recommendations
+# 5. Recommendations
 
 To ensure **100% accuracy**, perform the following:
 
@@ -406,7 +406,7 @@ To ensure **100% accuracy**, perform the following:
 
 ---
 
-## Disclaimer
+# Disclaimer
 
 All details regarding **activation functions, coordinate decoding, and feature map scales** are currently **assumptions based on documentation and YOLOv8/previous versions**.  
 These points must **not** be treated as authoritative until **direct code-level validation** is completed.
