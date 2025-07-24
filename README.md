@@ -18,6 +18,8 @@ YOLOv11n is the **lightest and fastest model** in the YOLOv11 family, tailored f
 
 ##  Architecture Overview
 
+To See model's Interal Calculations visit page [calulation.md](https://github.com/dhruv-218/object_detect/blob/main/calulation.md)
+
 ## Backbone (Efficient Feature Extraction)
 
 | Layer | Type      | Output Shape   | Notes                                |
