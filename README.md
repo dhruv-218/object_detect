@@ -1,6 +1,6 @@
 # Object Detection with YOLOv11
 
-This project demonstrates object detection using a YOLOv8 neural network, trained and evaluated on a custom dataset. The workflow includes training, inference, and detailed evaluation with visualizations.
+This project demonstrates object detection using a YOLOv11 neural network, trained and evaluated on a custom dataset. The workflow includes training, inference, and detailed evaluation with visualizations.
 
 
 ### Example Output Images
@@ -124,7 +124,7 @@ After running evaluation, plots are auto-saved in the `runs/detect/val/` directo
    ```
 
 ## Neural Network Details
-- **YOLOv8**: Efficient, anchor-free, real-time detection
+- **YOLOv11n**: Efficient, anchor-free, real-time detection
 - **Layers**: CSPDarknet backbone, PANet neck, YOLO head
 - **Activation**: SiLU
 
