@@ -341,12 +341,12 @@ It outlines **what has been verified** and **what requires code-level confirmati
 
 | Aspect                                  | Status              | Notes                                                                                   |
 |-----------------------------------------|---------------------|-----------------------------------------------------------------------------------------|
-| Exponential calculations (`e^x`)        | ✅ Verified          | Example: `e^(2.1) = 8.1662` matches correct value.                                      |
-| Sigmoid intermediate `e^x` values       | ⚠️ Pending Check    | All intermediate exponentials in sigmoid calculations need double-checking.            |
-| Detection head activation functions     | ❌ Not Verified     | Not explicitly stated in official docs; requires inspecting `head.py`.                 |
-| Coordinate decoding formulas            | ❌ Not Verified     | Must confirm the mathematical formulas used for decoding predictions.                  |
-| Grid cell indexing & anchor scaling     | ❌ Not Verified     | Details missing; must confirm from source code.                                        |
-| Feature map scales (P1–P5 vs P3–P5)     | ⚠️ Discrepancy      | Some sources list `320×320 → 20×20 (P1–P5)`; current README uses only `80×80 → 20×20`. |
+| Exponential calculations (`e^x`)        |  Verified          | Example: `e^(2.1) = 8.1662` matches correct value.                                      |
+| Sigmoid intermediate `e^x` values       | Pending Check    | All intermediate exponentials in sigmoid calculations need double-checking.            |
+| Detection head activation functions     |  Not Verified     | Not explicitly stated in official docs; requires inspecting `head.py`.                 |
+| Coordinate decoding formulas            |  Not Verified     | Must confirm the mathematical formulas used for decoding predictions.                  |
+| Grid cell indexing & anchor scaling     |  Not Verified     | Details missing; must confirm from source code.                                        |
+| Feature map scales (P1–P5 vs P3–P5)     |  Discrepancy      | Some sources list `320×320 → 20×20 (P1–P5)`; current README uses only `80×80 → 20×20`. |
 
 ---
 
