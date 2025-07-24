@@ -1,4 +1,4 @@
-# YOLOv11n Inference Pipeline – Architecture-Neutral Overview
+# YOLOv11n Inference Pipeline – Architecture-Neutral Calculations
 
 This document describes how object detection works in a YOLO-style model (e.g., YOLOv11n), without depending on specific architectural blocks like C2PSA, PAN, or C3k2. It demonstrates the complete flow from input image to final predictions.
 
